@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+      <node name="publisher" pkg="ros_audio_player" type="publisher.py"/>
+
+      <node name="audio_player" pkg="ros_audio_player" type="player.py" output="screen">
+            <param name="file_path" value="/home/michele/ros/src/Voice_Controlled_Mobile_Robot/control_bot/voice_commands/"/>
+            <param name="file_extension" value=".wav"/>
+            <param name="no_file" value="I want to say something but I don't know what is it"/>
+            <param name="default_file" value="none"/>
+      </node>
+</launch>
