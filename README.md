@@ -15,6 +15,6 @@ git clone https://github.com/m-tartari/ros_audio_player.git
 ## Use
 A sample launch file named pub_sub.launch is present in the package. and can be run using:
 ```
-roslaunch ros_audio_player
+roslaunch ros_audio_player pub_sub.launch
 ```
 It will launch the player.py (main component of this package) and a publisher node (used only for testing and understanding the package).
